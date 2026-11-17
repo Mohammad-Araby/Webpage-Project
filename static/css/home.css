@@ -1,0 +1,80 @@
+body {
+    margin: 0.75rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+header img {
+    display: block;
+    height: 2.5rem;
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+header nav a{
+    padding: 0.6rem 0.25rem;
+    font-size: 0.8rem;
+    color: #4B5563;
+    text-decoration: none;
+    transition: color 0.1s;
+    border-radius: 99px;
+}
+
+header nav a[aria-current="page"] {
+    background: #FFEDD5;
+    color: #9A3412;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header button {
+    padding: 0.6rem 0.25rem;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 0.7rem;
+    color: #4B5563;
+}
+
+header button:hover,
+header button:focus-visible {
+    cursor: pointer;
+    color: #E85D04;
+    transition: 0.1s;
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+        margin-right: auto;
+        white-space: nowrap;
+    }
+
+    header nav {
+        flex-basis: auto;
+        gap: 1rem;
+    }
+}
