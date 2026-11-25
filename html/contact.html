@@ -33,7 +33,8 @@
 
         <section class="contact-us">
 
-            <form id="contact-form">
+            <form id="contact-form"> 
+            <!--DO NOT FORGET TO ADD "novalidate" WHEN USING JS, im not adding it rn to test error message look-->
             <fieldset class="form-section">
                 <legend>Contact Details</legend>
                 <div class="form-row">
@@ -53,7 +54,7 @@
                     <div class="field">
                         <label>Subject
                             <select id="subject" required>
-                                <option selected hidden disabled>Please select a reason.</option>
+                                <option selected hidden disabled value="">Please select a reason.</option>
                                 <option value="err">Recipe or Nutrition Error</option>
                                 <option value="bug">Report a bug</option>
                                 <option value="req">Feature Request</option>
