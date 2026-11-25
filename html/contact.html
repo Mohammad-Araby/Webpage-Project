@@ -84,12 +84,48 @@
                         </label>
                     </div>
                 </fieldset>
+
+                <div class="form-row">
+                    <div class="field">
+                        <label>Weight (kg)
+                            <input type="number" id="weight" name="weight" min="25" max="250" step="1" placeholder="67.9" required>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label>Height (cm)
+                            <input type="number" id="height" name="hight" min="100" max="250" step="1" placeholder="167" required>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        <small class="error-msg" aria-live="polite"></small>
+                    </div>
+                </div>
             </fieldset>
-
-
-
-                </form>
+            <fieldset class="form-section">
+                <legend>Your Message</legend>
+                <div class="field">
+                    <label>Message
+                        <textarea id="message" name="message" rows="5" minlength="10" maxlength="1000" placeholder="Tell us what happened and how we can help!" required></textarea>
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit-btn">Submit form</button>
+            </form>
         </section>
     </main>
-
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p><a href="mailto:hello@recipeexplorer.example">hello@recipeexplorer.example</a></p>
+                <p><a href="tel:+962000000000">+962 00 000 0000</a></p>
+            </div>
+            <div class="footer-social" aria-label="Social media">
+                <p><a href="https://instagram.com">Socials</a></p>
+                <p><a href="contact.html#reach-us">Location</a></p>
+            </div>
+            <p class="copyright"><small>&copy; 2026 Recipe Explorer. All rights reserved.</small></p>
+        </div>
+    </footer>
 </body>
