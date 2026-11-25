@@ -2,6 +2,9 @@ body {
     margin: 0.75rem;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+main {
+    padding-bottom: 4rem;
+}
 
 header {
     display: flex;
