@@ -86,7 +86,7 @@ header nav a[aria-current="page"] {
     body {
         padding-bottom: 0;
     }
-    
+
     header nav {
         position: static;
         justify-content: flex-start;
