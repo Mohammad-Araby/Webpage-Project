@@ -37,6 +37,7 @@
             <fieldset class="form-section">
                 <legend>Contact Details</legend>
                 <div class="form-row">
+
                     <div class="field">
                         <label>Name
                             <input type="text" id="name" minlength="5" max="67" placeholder="Full name" required>
@@ -48,22 +49,48 @@
                             <input type="email" id="email" placeholder="Email@example.com" required>
                         </label>
                     </div>
-                </div>
 
-                    <label>Subject
-                        <select id="subject" required>
-                            <option selected hidden disabled>Please select a reason.</option>
-                            <option value="err">Recipe or Nutrition Error</option>
-                            <option value="bug">Report a bug</option>
-                            <option value="req">Feature Request</option>
-                            <option value="acc">Account or login issue</option>
-                            <option value="gen">General Feedback / Other</option>
-                        </select>
-                    </label>
+                    <div class="field">
+                        <label>Subject
+                            <select id="subject" required>
+                                <option selected hidden disabled>Please select a reason.</option>
+                                <option value="err">Recipe or Nutrition Error</option>
+                                <option value="bug">Report a bug</option>
+                                <option value="req">Feature Request</option>
+                                <option value="acc">Account or login issue</option>
+                                <option value="gen">General Feedback / Other</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <div class="radio-options">
+                        <label class="radio-option">
+                            <input type="radio" id="gender-male" name="gender" value="m" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" id="gender-female" name="gender" value="f">
+                            <span>Female</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" id="gender-other" name="gender" value="o">
+                            <span>Rather not say</span>
+                        </label>
+                    </div>
+                    
+                </fieldset>
+
+            </fieldset>
+
 
 
                 </form>
-            </fieldset>
         </section>
     </main>
 
