@@ -1,12 +1,15 @@
 body {
+    min-height: calc(100vh - 1.5rem);
     margin: 0.75rem;
+    display: flex;
+    flex-direction: column;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+
 main {
+    flex: 1;
+    width: 100%;
     padding-bottom: 2rem;
-}
-footer {
-    padding-bottom: 3rem;
 }
 
 header {
@@ -69,6 +72,86 @@ header nav a[aria-current="page"] {
     color: #9A3412;
 }
 
+/* shared footer */
+.site-footer {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4.5rem; /* Clears fixed mobile nav bar */
+    padding: 1.5rem 1.75rem;
+    background: #FAFAFA;
+    border: 1px solid #E5E7EB;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    font-size: 0.9rem;
+    color: #6B7280;
+}
+
+.footer-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    text-align: center;
+}
+
+.site-footer .copyright {
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #6B7280;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.footer-dot {
+    color: #D1D5DB;
+    user-select: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.footer-contact a {
+    color: #6B7280;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s;
+}
+
+.footer-contact .footer-support {
+    font-weight: 600;
+    color: #4B5563;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible,
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+    color: #C2410C;
+}
+
+.footer-contact .footer-dot {
+    display: none;
+}
+
 /* media queries */
 @media (min-width: 600px) {
     header h1 {
@@ -85,7 +168,26 @@ header nav a[aria-current="page"] {
         padding: 0.75rem 1rem;
         font-size: 1rem;
     }
+    
+    .footer-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.65rem;
+    }
 
+    .footer-contact .footer-dot {
+        display: inline;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -103,5 +205,8 @@ header nav a[aria-current="page"] {
 
     header nav a {
         padding: 0.6rem 0.5rem;
+    }
+    .site-footer {
+        margin-bottom: 0;
     }
 }
