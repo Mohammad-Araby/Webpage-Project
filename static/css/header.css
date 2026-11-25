@@ -32,8 +32,8 @@ header button {
     color: #4B5563;
 }
 
-header button:hover,
-header button:focus-visible {
+header a:hover,
+header a:focus-visible {
     cursor: pointer;
     color: #E85D04;
     transition: 0.1s;
