@@ -1,3 +1,23 @@
+:root {
+    /* accent: */
+    --accent: #C2410C;
+    --accent-dark: #9A3412;
+    --accent-hover: #E85D04;
+    --accent-tint: #FFEDD5;
+    --accent-bg: #FFFBF7;
+
+    /* neutrals: */
+    --text: #1F2937;
+    --text-muted: #4B5563;
+    --text-soft: #6B7280;
+    --border: #E5E7EB;
+    --border-strong: #D1D5DB;
+    --surface: #fff;
+    --surface-alt: #F9FAFB;
+    --error: #DC2626;
+    --error-bg: #FEF2F2;
+}
+
 body {
     margin: 0.75rem;
     padding-bottom: 5rem;
@@ -12,7 +32,7 @@ body {
     margin-top: 1rem;
     border-radius: 20px;
     overflow: hidden;
-    color: #fff;
+    color: var(--surface);
 }
 
 .hero-img {
@@ -67,28 +87,28 @@ body {
 }
 
 .btn:focus-visible {
-    outline: 3px solid #fff;
+    outline: 3px solid var(--surface);
     outline-offset: 2px;
 }
 
 .btn-primary {
-    background: #C2410C;
-    color: #fff;
+    background: var(--accent);
+    color: var(--surface);
 }
 
 .btn-primary:hover {
-    background: #9A3412;
+    background: var(--accent-dark);
 }
 
 .btn-secondary {
     background: transparent;
-    border-color: #fff;
-    color: #fff;
+    border-color: var(--surface);
+    color: var(--surface);
 }
 
 .btn-secondary:hover {
-    background: #fff;
-    color: #1F2937;
+    background: var(--surface);
+    color: var(--text);
 }
 
 /* media queries */
