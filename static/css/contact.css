@@ -1,0 +1,21 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-us input,
+.contact-us select,
+.contact-us button {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}

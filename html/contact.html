@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Explorer | Home</title>
+    <title>Recipe Explorer | Contact</title>
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/contact.css">
     <script src="../static/js/main.js" defer></script>
@@ -21,26 +21,45 @@
             <a href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
+
     <main>
-        <section id="team-details">
+
+        <section id="team-details" class="page-section">
             <br>
             <br>
             <br>
         </section>
-        <section id="contact-us">
-            <fieldset>
+
+
+        <section class="contact-us" class="page-section">
+
+            <form id="contact-form">
+            <fieldset class="form-section">
                 <legend>Contact Details</legend>
-                <form id="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" minlength="5" max="25" placeholder="Full name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email@example.com" required>
-                    <label for="subject">Subject</label>
-                    <select id="subject">
-                        <option>Example reason 1</option>
-                        <option>Example reason 2</option>
-                        <option>Example reason 3</option>
-                    </select>
+                <div class="form-row">
+                    <div class="field">
+                        <label>Name
+                            <input type="text" id="name" minlength="5" max="67" placeholder="Full name" required>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>Email
+                            <input type="email" id="email" placeholder="Email@example.com" required>
+                        </label>
+                    </div>
+                </div>
+
+                    <label>Subject
+                        <select id="subject" required>
+                            <option selected hidden disabled>Please select a reason.</option>
+                            <option value="err">Recipe or Nutrition Error</option>
+                            <option value="bug">Report a bug</option>
+                            <option value="req">Feature Request</option>
+                            <option value="acc">Account or login issue</option>
+                            <option value="gen">General Feedback / Other</option>
+                        </select>
+                    </label>
 
 
                 </form>
