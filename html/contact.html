@@ -24,10 +24,31 @@
 
     <main>
 
-        <section id="team-details" class="page-section">
-            <br>
-            <br>
-            <br>
+        <section id="team-details" class="page-section" aria-labelledby="team-heading">
+            <h2 id="team-heading">Meet the Team</h2>
+            <p class="section-intro">Reciple Explorer was built by two CS students who wanted to pass Webpage Design and Internet Programming.</p>
+
+            <div class="team-grid">
+                <article class="team-card">
+                    <img src="../static/images/placeholder.webp" alt="Avatar for Member One">
+                    <div>
+                        <h3>Mohammad Najjar</h3>
+                        <p class="team-role">JavaScript &amp; API Integration</p>
+                        <p class="team-bio">THATS WHY HES THE GOAT</p>
+                        <a href="mailto:moh20250049@std.psut.edu.jo">moh20250049@std.psut.edu.jo</a>
+                    </div>
+                </article>
+                
+                <article class="team-card">
+                    <img src="../static/images/araby.webp" alt="Avatar for Member Two">
+                    <div>
+                        <h3>Mohammad Araby</h3>
+                        <p class="team-role">UI Design &amp; Frontend Layout</p>
+                        <p class="team-bio">LEECHED OFF THE GOAT</p>
+                        <a href="mailto:mhd20250141@std.psut.edu.jo">mhd20250141@std.psut.edu.jo</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
 
@@ -122,15 +143,21 @@
     </main>
     <footer class="site-footer">
         <div class="footer-inner">
+            <p class="copyright">&copy; 2026 Recipe Explorer. All rights reserved.</p>
+
+            <nav class="footer-social" aria-label="Social media">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <span>Instagram</span>
+                </a>
+            </nav>
+
             <div class="footer-contact">
-                <p><a href="mailto:hello@recipeexplorer.example">hello@recipeexplorer.example</a></p>
-                <p><a href="tel:+962000000000">+962 00 000 0000</a></p>
+                <a href="mailto:hello@recipeexplorer.example">hello@recipeexplorer.example</a>
+                <span class="footer-dot" aria-hidden="true">&bull;</span>
+                <a href="tel:+962000000000">+962 00 000 0000</a>
+                <span class="footer-dot" aria-hidden="true">&bull;</span>
+                <a class="footer-support" href="contact.html#contact-form">Contact Us</a>
             </div>
-            <div class="footer-social" aria-label="Social media">
-                <p><a href="https://instagram.com">Socials</a></p>
-                <p><a href="contact.html#reach-us">Location</a></p>
-            </div>
-            <p class="copyright"><small>&copy; 2026 Recipe Explorer. All rights reserved.</small></p>
         </div>
     </footer>
 </body>
