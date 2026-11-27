@@ -171,8 +171,8 @@ main {
 }
 
 .contact-us textarea {
-    resize: vertical;
-    min-height: 7rem;
+    resize: none;
+    height: 7rem;
 }
 
 
@@ -265,6 +265,7 @@ main {
     background: var(--accent);
     color: var(--surface);
     font: inherit;
+    width: 100%;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
@@ -327,6 +328,10 @@ main {
     .radio-option {
         font-size: 0.95rem;
         padding: 0.6rem 0.75rem;
+    }
+
+    .submit-btn {
+        width: 25%;
     }
 }
 
