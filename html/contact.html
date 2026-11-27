@@ -63,12 +63,14 @@
                         <label>Name
                             <input type="text" id="name" minlength="5" maxlength="67" placeholder="Full name" required>
                         </label>
+                        <small class="error-msg" aria-live="polite"></small>
                     </div>
 
                     <div class="field">
                         <label>Email
                             <input type="email" id="email" placeholder="Email@example.com" required>
                         </label>
+                        <small class="error-msg" aria-live="polite"></small>
                     </div>
 
                     <div class="field">
@@ -82,6 +84,7 @@
                                 <option value="gen">General Feedback / Other</option>
                             </select>
                         </label>
+                        <small class="error-msg" aria-live="polite"></small>
                     </div>
                 </div>
             </fieldset>
@@ -103,14 +106,14 @@
                             <input type="radio" id="gender-other" name="gender" value="o">
                             <span>Rather not say</span>
                         </label>
-                        <small class="error-msg" aria-live="polite"></small>
                     </div>
+                    <small class="error-msg" aria-live="polite"></small>
                 </fieldset>
 
                 <div class="form-row">
                     <div class="field">
                         <label>Weight (kg)
-                            <input type="number" id="weight" name="weight" min="25" max="250" step="1" placeholder="67.9" required>
+                            <input type="number" id="weight" name="weight" min="25" max="250" step="0.1" placeholder="67.9" required>
                         </label>
                         <small class="error-msg" aria-live="polite"></small>
                     </div>
