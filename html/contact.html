@@ -6,160 +6,161 @@
     <title>Recipe Explorer | Contact</title>
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/contact.css">
-    <script src="../static/js/main.js" defer></script>
+    <script src="../static/js/contact-validate.js" defer></script>
 </head>
-<body>
-    <header>
-        <div class="brand">
-            <h1>Recipe Explorer</h1>
-            <a href="index.html"><img src="../static/images/placeholder.webp" alt="logo"></a>
-        </div>
-        <nav aria-label="Main">
-            <a href="index.html" >Home</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="nutrition.html">Nutrition</a>
-            <a href="contact.html" aria-current="page">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-
-        <section id="team-details" class="page-section" aria-labelledby="team-heading">
-            <h2 id="team-heading">Meet the Team</h2>
-            <p class="section-intro">Reciple Explorer was built by two CS students who wanted to pass Webpage Design and Internet Programming.</p>
-
-            <div class="team-grid">
-                <article class="team-card">
-                    <img src="../static/images/placeholder.webp" alt="Avatar for Member One">
-                    <div>
-                        <h3>Mohammad Najjar</h3>
-                        <p class="team-role">JavaScript &amp; API Integration</p>
-                        <p class="team-bio">THATS WHY HES THE GOAT</p>
-                        <a href="mailto:moh20250049@std.psut.edu.jo">moh20250049@std.psut.edu.jo</a>
-                    </div>
-                </article>
-                
-                <article class="team-card">
-                    <img src="../static/images/araby.webp" alt="Avatar for Member Two">
-                    <div>
-                        <h3>Mohammad Araby</h3>
-                        <p class="team-role">UI Design &amp; Frontend Layout</p>
-                        <p class="team-bio">LEECHED OFF THE GOAT</p>
-                        <a href="mailto:mhd20250141@std.psut.edu.jo">mhd20250141@std.psut.edu.jo</a>
-                    </div>
-                </article>
+    <body>
+        <header>
+            <div class="brand">
+                <h1>Recipe Explorer</h1>
+                <a href="index.html"><img src="../static/images/placeholder.webp" alt="logo"></a>
             </div>
-        </section>
+            <nav aria-label="Main">
+                <a href="index.html" >Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </header>
 
+        <main>
 
-        <section class="contact-us">
+            <section id="team-details" class="page-section" aria-labelledby="team-heading">
+                <h2 id="team-heading">Meet the Team</h2>
+                <p class="section-intro">Reciple Explorer was built by two CS students who wanted to pass Webpage Design and Internet Programming.</p>
 
-            <form id="contact-form" novalidate> 
-            <fieldset class="form-section">
-                <legend>Contact Details</legend>
-                <div class="form-row">
+                <div class="team-grid">
+                    <article class="team-card">
+                        <img src="../static/images/placeholder.webp" alt="Avatar for Member One">
+                        <div>
+                            <h3>Mohammad Najjar</h3>
+                            <p class="team-role">JavaScript &amp; API Integration</p>
+                            <p class="team-bio">THATS WHY HES THE GOAT</p>
+                            <a href="mailto:moh20250049@std.psut.edu.jo">moh20250049@std.psut.edu.jo</a>
+                        </div>
+                    </article>
 
-                    <div class="field">
-                        <label>Name
-                            <input type="text" id="name" minlength="5" maxlength="67" placeholder="Full name" required>
-                        </label>
-                        <small class="error-msg" aria-live="polite"></small>
-                    </div>
-
-                    <div class="field">
-                        <label>Email
-                            <input type="email" id="email" placeholder="Email@example.com" required>
-                        </label>
-                        <small class="error-msg" aria-live="polite"></small>
-                    </div>
-
-                    <div class="field">
-                        <label>Subject
-                            <select id="subject" required>
-                                <option selected hidden disabled value="">Please select a reason.</option>
-                                <option value="err">Recipe or Nutrition Error</option>
-                                <option value="bug">Report a bug</option>
-                                <option value="req">Feature Request</option>
-                                <option value="acc">Account or login issue</option>
-                                <option value="gen">General Feedback / Other</option>
-                            </select>
-                        </label>
-                        <small class="error-msg" aria-live="polite"></small>
-                    </div>
+                    <article class="team-card">
+                        <img src="../static/images/araby.webp" alt="Avatar for Member Two">
+                        <div>
+                            <h3>Mohammad Araby</h3>
+                            <p class="team-role">UI Design &amp; Frontend Layout</p>
+                            <p class="team-bio">LEECHED OFF THE GOAT</p>
+                            <a href="mailto:mhd20250141@std.psut.edu.jo">mhd20250141@std.psut.edu.jo</a>
+                        </div>
+                    </article>
                 </div>
-            </fieldset>
+            </section>
 
-            <fieldset>
-                <legend>Personal Details</legend>
-                <fieldset>
-                    <legend>Gender</legend>
-                    <div class="radio-options">
-                        <label class="radio-option">
-                            <input type="radio" id="gender-male" name="gender" value="m" required>
-                            <span>Male</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" id="gender-female" name="gender" value="f">
-                            <span>Female</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" id="gender-other" name="gender" value="o">
-                            <span>Rather not say</span>
-                        </label>
+
+            <section class="contact-us">
+
+                <form id="contact-form" novalidate> 
+                <fieldset class="form-section">
+                    <legend>Contact Details</legend>
+                    <div class="form-row">
+
+                        <div class="field">
+                            <label>Name
+                                <input type="text" id="name" nam="name" minlength="5" maxlength="67" placeholder="Full name" required>
+                            </label>
+                            <small class="error-msg" aria-live="polite"></small>
+                        </div>
+
+                        <div class="field">
+                            <label>Email
+                                <input type="email" id="email" name="email" placeholder="Email@example.com" required>
+                            </label>
+                            <small class="error-msg" aria-live="polite"></small>
+                        </div>
+
+                        <div class="field">
+                            <label>Subject
+                                <select id="subject" name="subject" required>
+                                    <option selected hidden disabled value="">Please select a reason.</option>
+                                    <option value="err">Recipe or Nutrition Error</option>
+                                    <option value="bug">Report a bug</option>
+                                    <option value="req">Feature Request</option>
+                                    <option value="acc">Account or login issue</option>
+                                    <option value="gen">General Feedback / Other</option>
+                                </select>
+                            </label>
+                            <small class="error-msg" aria-live="polite"></small>
+                        </div>
                     </div>
-                    <small class="error-msg" aria-live="polite"></small>
                 </fieldset>
 
-                <div class="form-row">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <div class="radio-options">
+                            <label class="radio-option">
+                                <input type="radio" id="gender-male" name="gender" value="m" required>
+                                <span>Male</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" id="gender-female" name="gender" value="f">
+                                <span>Female</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" id="gender-other" name="gender" value="o">
+                                <span>Rather not say</span>
+                            </label>
+                        </div>
+                        <small class="error-msg" aria-live="polite"></small>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label>Weight (kg)
+                                <input type="number" id="weight" name="weight" min="25" max="250" step="0.1" placeholder="67.9" required>
+                            </label>
+                            <small class="error-msg" aria-live="polite"></small>
+                        </div>
+                        <div class="field">
+                            <label>Height (cm)
+                                <input type="number" id="height" name="height" min="100" max="250" step="1" placeholder="167" required>
+                            </label>
+                            <small class="error-msg" aria-live="polite"></small>
+                        </div>
+                        <div class="field">
+                            <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" name="dob" required>
+                            <small class="error-msg" aria-live="polite"></small>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-section">
+                    <legend>Your Message</legend>
                     <div class="field">
-                        <label>Weight (kg)
-                            <input type="number" id="weight" name="weight" min="25" max="250" step="0.1" placeholder="67.9" required>
+                        <label>Message
+                            <textarea id="message" name="message" rows="5" minlength="10" maxlength="1000" placeholder="Tell us what happened and how we can help!" required></textarea>
                         </label>
                         <small class="error-msg" aria-live="polite"></small>
                     </div>
-                    <div class="field">
-                        <label>Height (cm)
-                            <input type="number" id="height" name="height" min="100" max="250" step="1" placeholder="167" required>
-                        </label>
-                        <small class="error-msg" aria-live="polite"></small>
-                    </div>
-                    <div class="field">
-                        <label for="dob">Date of Birth</label>
-                            <input type="date" id="dob" name="dob" required>
-                        <small class="error-msg" aria-live="polite"></small>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset class="form-section">
-                <legend>Your Message</legend>
-                <div class="field">
-                    <label>Message
-                        <textarea id="message" name="message" rows="5" minlength="10" maxlength="1000" placeholder="Tell us what happened and how we can help!" required></textarea>
-                    </label>
-                    <small class="error-msg" aria-live="polite"></small>
-                </div>
-            </fieldset>
-            <button type="submit" class="submit-btn">Submit form</button>
-            </form>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <p class="copyright">&copy; 2026 Recipe Explorer. All rights reserved.</p>
+                </fieldset>
+                <button type="submit" class="submit-btn">Submit form</button>
+                </form>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p class="copyright">&copy; 2026 Recipe Explorer. All rights reserved.</p>
 
-            <nav class="footer-social" aria-label="Social media">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <span>Instagram</span>
-                </a>
-            </nav>
+                <nav class="footer-social" aria-label="Social media">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <span>Instagram</span>
+                    </a>
+                </nav>
 
-            <div class="footer-contact">
-                <a href="mailto:hello@recipeexplorer.example">hello@recipeexplorer.example</a>
-                <span class="footer-dot" aria-hidden="true">&bull;</span>
-                <a href="tel:+962000000000">+962 00 000 0000</a>
-                <span class="footer-dot" aria-hidden="true">&bull;</span>
-                <a class="footer-support" href="contact.html#contact-form">Contact Us</a>
+                <div class="footer-contact">
+                    <a href="mailto:hello@recipeexplorer.example">hello@recipeexplorer.example</a>
+                    <span class="footer-dot" aria-hidden="true">&bull;</span>
+                    <a href="tel:+962000000000">+962 00 000 0000</a>
+                    <span class="footer-dot" aria-hidden="true">&bull;</span>
+                    <a class="footer-support" href="contact.html#contact-form">Contact Us</a>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+</html>
