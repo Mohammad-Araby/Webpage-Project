@@ -11,6 +11,22 @@ async function fecthData() {
     return temp.recipes
 }
 
+function addToFavorites(id) {
+    let storage = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    storage.push(id);
+
+    localStorage.setItem('favorites', JSON.stringify(storage));
+}
+
+function removeFromFavorites(id) {
+    let storage = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    storage = storage.filter(temp => temp !== id);
+
+    localStorage.setItem('favorites', JSON.stringify(storage));
+}
+
 let data = await fecthData();
 
 console.log(data)
@@ -25,10 +41,26 @@ for (let i = 0; i<8; i++) {
             <p class="card-description">${shortDescription(recipe)}</p>
             <p class="card-calories">${recipe.caloriesPerServing} cal</p>
             <button class="card-button">View Details</button>
-            <button class="favorite-button" type="button" data-id="${recipe.id}"">
+            <button class="favorite-button" type="button" data-id="${recipe.id}" id="">
                 Add to favorites
             </button>
         </div>
     `;
 }
 cards_section.innerHTML = html;
+
+document.getElementById('cards-section').addEventListener('click', (event) => {
+    const button = event.target.closest('.favorite-button');
+    if (!button) return;
+
+    if (button.textContent == 'Add to favorites') {
+        button.textContent = 'Added';
+        addToFavorites(button.dataset.id);
+        button.classList.add("is-favorite");
+    }
+    else {
+        button.textContent = 'Add to favorites';
+        removeFromFavorites(button.dataset.id);
+        button.classList.remove("is-favorite");
+    }
+  });

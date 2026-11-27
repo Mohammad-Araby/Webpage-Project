@@ -53,11 +53,6 @@ body {
     transition: 0.1s;
 }
 
-.favorite-button.is-favorite {
-    background: black;
-    color: white;
-}
-
 .card-img {
     display: block;
     width: 100%;
