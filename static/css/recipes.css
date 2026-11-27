@@ -1,148 +1,164 @@
 body {
-    /* margin: 1rem; */
-    padding: 0.2rem;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0;
+}
+
+.page-heading {
+    padding: 1.25rem 0.25rem 0.25rem;
+}
+
+.page-heading h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.page-heading p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.search-sort {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+}
+
+.search-sort input[type="search"] {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid var(--border-input);
+    border-radius: 12px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-sort input[type="search"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-tint);
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
 }
 
 .card {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1.5rem;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 20px;
-    font-size: 0.5rem;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.15s, box-shadow 0.15s;
 }
 
-.card-title {
-    font-size: 1.3rem;
-    margin: 0;
-    margin-top: 5px;
-}
-
-.card-category {
-    font-size: 0.7rem;
-    margin: 5px 0;
-}
-
-.card-description {
-    font-size: 0.85rem;
-    line-height: 1.4;
-    color: #4B5563;
-    margin: 0.15rem 0 0.35rem;
-}
-
-.card-calories {
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin: 0 0 0.35rem;
-}
-
-.favorite-button {
-    background: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px 0;
-    cursor: pointer;
-    transition: 0.1s;
-}
-
-.favorite-button.is-favorite {
-    background: black;
-    color: white;
+.card:hover {
+    transform: scale(1.02) translateY(-8px); /*thanks bro, immediately put that to use*/
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .card-img {
     display: block;
     width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    height: auto;
-    border-radius: 15px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 14px;
+    background: var(--surface-alt);
+}
+
+.card-title {
+    margin: 0.75rem 0 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.card-category {
+    align-self: flex-start;
+    margin: 0.4rem 0 0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: var(--accent-tint);
+    color: var(--accent-dark);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.card-description {
+    flex: 1;
+    margin: 0.5rem 0 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+    /*next 4 lines just help so that theres no overlap if the description is long*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+.card-calories {
+    margin: 0 0 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+}
+
+.card-button,
+.favorite-button {
+    padding: 0.25rem 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.15s;
 }
 
 .card-button {
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px 0;
-    border: 0;
-    transition: 0.1s;
+    color: var(--accent-dark);
 }
 
-.card-button:hover {
-    background-color: white;
-    color: black;
-    transition: 0.1s;
-    cursor: pointer;
-    transform: scale(1.2);
+.favorite-button {
+    color: var(--text-muted);
 }
 
-.cards-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.card-button:hover,
+.favorite-button:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
 }
 
+.favorite-button.is-favorite {
+    color: var(--accent);
+}
 
-@media (min-width: 600px) {
-    body {
-        padding: 1rem;
-        font-family: "Plus Jakarta Sans", sans-serif;
-    }
-    
-    .card {
-        flex : 1;
-        width: 15rem;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 1.5rem;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-        border-radius: 20px;
-        font-size: 0.5rem;
-    }
-
-    .card-title {
-        font-size: 1.3rem;
-        margin: 0;
-        margin-top: 5px;
-    }
-
-    .card-category {
-        font-size: 0.7rem;
-        margin: 5px 0;
-    }
-
-    .card-img {
-        border-radius: 15px;
-    }
-
-    .card-button {
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        padding: 5px;
-        margin: 5px 0;
-        border: 0;
-        transition: 0.1s;
-    }
-
-    .card-button:hover {
-        background-color: white;
-        color: black;
-        transition: 0.1s;
-        cursor: pointer;
-        transform: scale(1.2);
-    }
-
-    .cards-section {
-        margin-top: 100px;
-    }
+.card-button:focus-visible,
+.favorite-button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
