@@ -40,10 +40,12 @@ for (let i = 0; i<8; i++) {
             <p class="card-category">${recipe.mealType && recipe.mealType[0]}</p>
             <p class="card-description">${shortDescription(recipe)}</p>
             <p class="card-calories">${recipe.caloriesPerServing} cal</p>
+            <div class="card-actions">
             <button class="card-button">View Details</button>
             <button class="favorite-button" type="button" data-id="${recipe.id}" id="">
                 Add to favorites
             </button>
+            </div>
         </div>
     `;
 }
