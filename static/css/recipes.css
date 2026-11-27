@@ -45,53 +45,6 @@ body {
     box-shadow: 0 0 0 3px var(--accent-tint);
 }
 
-body {
-    padding: 0;
-}
-
-.page-heading {
-    padding: 1.25rem 0.25rem 0.25rem;
-}
-
-.page-heading h1 {
-    margin: 0 0 0.25rem;
-    font-size: 1.6rem;
-    color: var(--text);
-}
-
-.page-heading p {
-    margin: 0;
-    color: var(--text-muted);
-}
-
-.search-sort {
-    display: flex;
-    gap: 0.5rem;
-    margin: 0.75rem 0;
-}
-
-.search-sort input[type="search"] {
-    flex: 1;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 0.7rem 1rem;
-    border: 1.5px solid var(--border-input);
-    border-radius: 12px;
-    background: var(--surface);
-    color: var(--text);
-    font: inherit;
-    font-size: 1rem;
-    -webkit-appearance: none;
-    appearance: none;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.search-sort input[type="search"]:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px var(--accent-tint);
-}
-
 .cards-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -281,6 +234,10 @@ body {
         font-size: 0.9rem;
         font-weight: 600;
         color: var(--text);
+    }
+
+    .card-calories::before{
+        content: none;
     }
 
     .card-actions {
