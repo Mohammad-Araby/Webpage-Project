@@ -251,6 +251,11 @@ main {
     background: var(--error-bg);
 }
 
+.radio-options.invalid .radio-option {
+    border-color: var(--error);
+    background: var(--error-bg);
+}
+
 /* submit button */
 .submit-btn {
     align-self: flex-start;
