@@ -136,7 +136,16 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
-    transition: color 0.15s;
+    transition: 0.1s;
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    border-radius: 15px;
 }
 
 .card-button {
