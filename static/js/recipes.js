@@ -31,7 +31,7 @@ let data = await fecthData();
 
 console.log(data)
 let html = "";
-for (let i = 0; i<8; i++) {
+for (let i = 0; i<30; i++) {
     let recipe = data[i];
     html += `
         <div class="card">
