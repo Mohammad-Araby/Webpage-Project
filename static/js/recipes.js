@@ -42,9 +42,7 @@ for (let i = 0; i<30; i++) {
             <p class="card-calories">${recipe.caloriesPerServing} cal</p>
             <div class="card-actions">
             <button class="card-button">View Details</button>
-            <button class="favorite-button" type="button" data-id="${recipe.id}" id="">
-                Add to favorites
-            </button>
+            <button class="favorite-button" type="button" data-id="${recipe.id}" id="">Save</button>
             </div>
         </div>
     `;
@@ -55,13 +53,13 @@ document.getElementById('cards-section').addEventListener('click', (event) => {
     const button = event.target.closest('.favorite-button');
     if (!button) return;
 
-    if (button.textContent == 'Add to favorites') {
+    if (button.textContent == 'Save') {
         button.textContent = 'Added';
         addToFavorites(button.dataset.id);
         button.classList.add("is-favorite");
     }
     else {
-        button.textContent = 'Add to favorites';
+        button.textContent = 'Save';
         removeFromFavorites(button.dataset.id);
         button.classList.remove("is-favorite");
     }
