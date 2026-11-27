@@ -1,0 +1,148 @@
+body {
+    /* margin: 1rem; */
+    padding: 0.2rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    font-size: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card-category {
+    font-size: 0.7rem;
+    margin: 5px 0;
+}
+
+.card-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #4B5563;
+    margin: 0.15rem 0 0.35rem;
+}
+
+.card-calories {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+}
+
+.favorite-button {
+    background: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.favorite-button.is-favorite {
+    background: black;
+    color: white;
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    border-radius: 15px;
+}
+
+.card-button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    border: 0;
+    transition: 0.1s;
+}
+
+.card-button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media (min-width: 600px) {
+    body {
+        padding: 1rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    
+    .card {
+        flex : 1;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+        border-radius: 20px;
+        font-size: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .card-category {
+        font-size: 0.7rem;
+        margin: 5px 0;
+    }
+
+    .card-img {
+        border-radius: 15px;
+    }
+
+    .card-button {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px 0;
+        border: 0;
+        transition: 0.1s;
+    }
+
+    .card-button:hover {
+        background-color: white;
+        color: black;
+        transition: 0.1s;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    .cards-section {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Explorer</title>
+        <link rel="stylesheet" href="../static/css/header.css">
+        <link rel="stylesheet" href="../static/css/recipes.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="brand">
+                <h1>Recipe Explorer</h1>
+                <a href="index.html"><img src="../static/images/placeholder.webp" alt="logo"></a>
+            </div>
+            <nav aria-label="Main">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="cards-section" id="cards-section">
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgQIZOBA329B8M8ZYg67JOQvkRmFxaGFTqcpk9c9IGjGDKxyO98UfOnJ4mxlsrZNi80fRIIViE2eE4PxOUDsmmhoOgXoolLtqs7LONS-4RUiA1mI18UMQahp4ednulB1DiBckHQY_GYLIb0x0jgHQ1tKmBCLyIb7ArrdT4GpSUGgrXuRWS0SADKapz9ZoG9-a9s60tEhKCrU56nV0g_iyGtpVl-f0TafIr86fRrs" alt="" class="card-img">
+                <p class="card-title" >Salmon</p>
+                <p class="card-category">Breakfast</p>
+                <p class="card-description">A short description of the recipe.</p>
+                <p class="card-calories">320 cal</p>
+                <button class="card-button">View Details</button>
+                <button class="favorite-button" type="button">Add to favorite</button>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p class="copyright">&copy; 2026 Recipe Explorer. All rights reserved.</p>
+    
+                <nav class="footer-social" aria-label="Social media">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <span>Instagram</span>
+                    </a>
+                </nav>
+    
+                <div class="footer-contact">
+                    <a href="mailto:hello@recipeexplorer.example">hello@recipeexplorer.example</a>
+                    <span class="footer-dot" aria-hidden="true">&bull;</span>
+                    <a href="tel:+962000000000">+962 00 000 0000</a>
+                    <span class="footer-dot" aria-hidden="true">&bull;</span>
+                    <a class="footer-support" href="contact.html#contact-form">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+        <script src="../static/js/recipes.js" type="module"></script>
+    </body>
+</html>
