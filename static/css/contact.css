@@ -22,7 +22,7 @@ main {
 .page-section h2 {
     margin: 0 0 0.5rem;
     font-size: 1.5rem;
-    color: #111827;
+    color: var(--text);
 }
 
 .section-intro {
@@ -62,7 +62,7 @@ main {
 .team-card h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: #111827;
+    color: var(--text);
 }
 
 .team-role {
@@ -140,7 +140,7 @@ main {
     gap: 0.4rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #374151;
+    color: var(--text-muted);
 }
 
 /* inputs */
@@ -195,7 +195,6 @@ main {
     background: var(--surface);
     font-size: 0.875rem;
     font-weight: 500;
-    color: #374151;
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
@@ -214,8 +213,8 @@ main {
 }
 
 .radio-option:hover {
-    border-color: #9CA3AF;
-    background: var(--surface-alt);
+    border-color: var(--text-tint);
+    background: var(--accent-bg);
 }
 
 .radio-option:has(input:focus-visible) {
